@@ -11,6 +11,13 @@
 		FD452C2F2B4DF0F6003C07CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C2E2B4DF0F6003C07CB /* ContentView.swift */; };
 		FD452C312B4DF0F7003C07CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD452C302B4DF0F7003C07CB /* Assets.xcassets */; };
 		FD452C342B4DF0F7003C07CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD452C332B4DF0F7003C07CB /* Preview Assets.xcassets */; };
+		FD452C3C2B4DF231003C07CB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C3B2B4DF231003C07CB /* Location.swift */; };
+		FD452C3E2B4DF2EF003C07CB /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C3D2B4DF2EF003C07CB /* Weather.swift */; };
+		FD452C412B4DF398003C07CB /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C402B4DF398003C07CB /* APIEndPoint.swift */; };
+		FD452C442B4DF404003C07CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C432B4DF404003C07CB /* Constants.swift */; };
+		FD452C462B4DF6AC003C07CB /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C452B4DF6AC003C07CB /* GeocodingClient.swift */; };
+		FD452C482B4DF93F003C07CB /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C472B4DF93F003C07CB /* WeatherClient.swift */; };
+		FD452C4B2B4E10C1003C07CB /* MeasurementFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD452C4A2B4E10C1003C07CB /* MeasurementFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		FD452C2E2B4DF0F6003C07CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD452C302B4DF0F7003C07CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD452C332B4DF0F7003C07CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD452C3B2B4DF231003C07CB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FD452C3D2B4DF2EF003C07CB /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FD452C402B4DF398003C07CB /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		FD452C432B4DF404003C07CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FD452C452B4DF6AC003C07CB /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
+		FD452C472B4DF93F003C07CB /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
+		FD452C4A2B4E10C1003C07CB /* MeasurementFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementFormatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,10 @@
 		FD452C2B2B4DF0F6003C07CB /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD452C492B4E10AA003C07CB /* Extensions */,
+				FD452C422B4DF3F9003C07CB /* Utilities */,
+				FD452C3F2B4DF384003C07CB /* Clients */,
+				FD452C3A2B4DF221003C07CB /* Models */,
 				FD452C2C2B4DF0F6003C07CB /* WeatherAppApp.swift */,
 				FD452C2E2B4DF0F6003C07CB /* ContentView.swift */,
 				FD452C302B4DF0F7003C07CB /* Assets.xcassets */,
@@ -65,6 +83,41 @@
 				FD452C332B4DF0F7003C07CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD452C3A2B4DF221003C07CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD452C3B2B4DF231003C07CB /* Location.swift */,
+				FD452C3D2B4DF2EF003C07CB /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD452C3F2B4DF384003C07CB /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				FD452C402B4DF398003C07CB /* APIEndPoint.swift */,
+				FD452C452B4DF6AC003C07CB /* GeocodingClient.swift */,
+				FD452C472B4DF93F003C07CB /* WeatherClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		FD452C422B4DF3F9003C07CB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FD452C432B4DF404003C07CB /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FD452C492B4E10AA003C07CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD452C4A2B4E10C1003C07CB /* MeasurementFormatter+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD452C3E2B4DF2EF003C07CB /* Weather.swift in Sources */,
 				FD452C2F2B4DF0F6003C07CB /* ContentView.swift in Sources */,
+				FD452C462B4DF6AC003C07CB /* GeocodingClient.swift in Sources */,
+				FD452C412B4DF398003C07CB /* APIEndPoint.swift in Sources */,
+				FD452C4B2B4E10C1003C07CB /* MeasurementFormatter+Extension.swift in Sources */,
+				FD452C3C2B4DF231003C07CB /* Location.swift in Sources */,
+				FD452C482B4DF93F003C07CB /* WeatherClient.swift in Sources */,
 				FD452C2D2B4DF0F6003C07CB /* WeatherAppApp.swift in Sources */,
+				FD452C442B4DF404003C07CB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
